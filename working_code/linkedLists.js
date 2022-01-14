@@ -1,9 +1,11 @@
+// node class 
 class Node {
     constructor(data) {
         this.data = data
         this.next = null
     }
 }
+
 
 class LinkedList {
     constructor() {
@@ -42,10 +44,12 @@ class LinkedList {
     // printListData
     print() {
         const listData = []
+        let counter = 0
         let current = this.head
-        while(current) {
+        while(current > this.length){
             listData.push(current.data)
             current = current.next
+            counter++
         }
         return listData
     }
@@ -89,14 +93,14 @@ class LinkedList {
     }  
 
     // delete(index) // deletes by index number
-    delete(data) {
+    // delete(data) {
 
-    }
+    // }
     
-    // reverse() // reverse the linkedList
-    reverse() {
+    // // reverse() // reverse the linkedList
+    // reverse() {
 
-    }
+    // }
 }
 
 const list = new LinkedList
