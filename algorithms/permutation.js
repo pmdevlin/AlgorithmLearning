@@ -95,3 +95,27 @@ function permutation(arr) {
 
 console.log(permutation(arr))
 
+
+
+
+
+// write algo that takes in a string, without using built in #reverse, check to see if 
+// String is a palendrome
+
+//const str = 'racecar'
+//const str1 = 'test'
+
+
+// function pal(str) {
+//     const arr = []
+
+//     for(let i = str.length; i >= 0; i--){
+//         arr.push(i)
+//     }
+//      if(str === arr.join('')) return true
+
+//      return false
+// }
+//console.log(pal(str));
+// racecar => true
+// test => false
