@@ -13,20 +13,37 @@
 
 
 const fizzbuzz = () => {
-    const arr = []
-
-    for(let i = 1; i<=20; i++){
+    // const arr = []
+    const totals ={}
+    let count = 0
+    let fizz = 0
+    let buzz = 0
+    let number = 0
+    for(let i = 1; i<=50000; i++){
         if(i % 3 === 0 && i % 5 === 0){
-            arr.push('fizzBuzz');
+            // arr.push('fizzBuzz');
+            count++
+            totals.fizzbuzz = count  
         }else if(i % 3 === 0){
-            arr.push('fizz');
+            // arr.push('fizz');
+            fizz++
+            totals.fizz = fizz
         }else if(i % 5 === 0){
-            arr.push('buzz')
+            // arr.push('buzz')
+            buzz++
+            totals.buzz = buzz
         }else{
-            arr.push(i);
+            // arr.push(i);
+            number++
+            totals.number = number
         }
     }
-    console.log(arr)
+    console.log(totals)
+    //console.log(arr)
+    //console.log(count)
 }
 
 fizzbuzz()
+
+
+ 
