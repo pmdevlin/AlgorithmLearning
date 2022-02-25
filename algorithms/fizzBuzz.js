@@ -16,31 +16,27 @@ const fizzbuzz = () => {
     // const arr = []
     const totals ={}
     let count = 0
-    let fizz = 0
-    let buzz = 0
-    let number = 0
-    for(let i = 1; i<=50000; i++){
+    for(let i = 1; i<=60; i++){
         if(i % 3 === 0 && i % 5 === 0){
-            // arr.push('fizzBuzz');
-            count++
-            totals.fizzbuzz = count  
+            totals[i] = 'fizzbuzz'
         }else if(i % 3 === 0){
-            // arr.push('fizz');
-            fizz++
-            totals.fizz = fizz
+            totals[i] = 'fizz'         
         }else if(i % 5 === 0){
-            // arr.push('buzz')
-            buzz++
-            totals.buzz = buzz
+            totals[i] = 'buzz'
         }else{
-            // arr.push(i);
-            number++
-            totals.number = number
+            totals[i] = i
         }
     }
+
+    for(let key in totals){
+        if(totals[key] === 'fizzbuzz'){
+            count++ 
+        }
+    }
+
+
     console.log(totals)
-    //console.log(arr)
-    //console.log(count)
+    console.log(`number of fizzbuzz ${count}`)
 }
 
 fizzbuzz()
