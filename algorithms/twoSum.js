@@ -1,5 +1,5 @@
-// find the 2 largest numbers that add up to the 
-// the number given 
+// find the 2 largest numbers in an array that add up to a preselected number 
+//  
 
 const arr = [2,7,11,15]
 const arr2 = [1,2,3,4,52,4,3,2,10,6,7]
