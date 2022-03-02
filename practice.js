@@ -1,18 +1,30 @@
-const array = [10,5,3,9,1,7,8,2,4,6]
-const arr = [1,2,3,4,5,6,7,8,9,10]
+const str = 'aaaabbbcccvvvlllsssppp'
 
+// find the most repeating character
 
-const bubble = (arr) => {
-    for(let i = 0; i < arr.length; i++){
-        for(let j = 0; j < arr.length; j++){
-            if(arr[j] > arr[j + 1]){
-                let temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = temp
-            }
+function find (str) { 
+    const obj = {}
+
+    let count = 0 
+    let returnKey = null 
+
+    for(let i = 0; i < str.length; i++){
+        const current = str[i]
+        if(!obj[current]){
+            obj[current] = 1
+        }else{
+            obj[current]++
         }
     }
-    return arr
-}
 
-console.log(bubble(array))
+    for(let key in obj){
+        if(obj[key] > count){
+            count = obj[key]
+            returnKey = key 
+        }
+    }
+
+    return returnKey 
+} 
+
+console.log(find(str))

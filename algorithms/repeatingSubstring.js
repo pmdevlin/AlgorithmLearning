@@ -1,20 +1,28 @@
+function mostFrequent(str) {
+    const obj = {}
 
-// find the repeating substring
+    let mostFrequentCount = 0
+    let mostFrequentCharacter = null
 
-let str = 'aaabbbbccc'
-
-function repeatingSubString(str){
- const obj = {}
- let count = 1 
-    for(let i = 0; i < str.length; i++){
-        if(!obj[str[i]]){
-            obj[str[i]] = count 
+    for(let i = 0; i < str.length; i++) {
+        let current = str[i]
+        if(!obj[current]) {
+            obj[current] = 1
+        } else {
+            obj[current]++
         }
-        if(obj[str[i]]){
-            count++
-        }
-    
     }
-    return obj
-}
-console.log(repeatingSubString(str))
+
+    for(let key in obj) {
+        if(obj[key] > mostFrequentCount) {
+            mostFrequentCount = obj[key]
+            mostFrequentCharacter = key
+        }
+    }
+    console.log(obj);
+    return mostFrequentCharacter
+
+}   
+
+const str = 'aaabbbdddcccc'
+console.log(mostFrequent(str))
