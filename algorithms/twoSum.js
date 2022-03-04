@@ -1,6 +1,6 @@
 // find the 2 largest numbers in an array that add up to a preselected number 
 //  
-import solution from './methods.js'
+
 
 
 const arr = [2,7,6,3,8,1,5,4]
@@ -28,7 +28,7 @@ const twoSum = (arr, num) => {
     return -1 
 }
 
-// console.log(twoSum(arr, num))
+console.log(twoSum(arr, num))
 
 
 // const find = (arr, num) => {
