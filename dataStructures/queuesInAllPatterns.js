@@ -94,13 +94,13 @@ const queue = function(obj){
     return obj
 }
 
-const line = queue({})
+const que = queue({})
 
-line.enqueued(0)
-line.enqueued(1)
-line.enqueued(2)
-line.enqueued(3)
-line.dequeued()
+que.enqueued(0)
+que.enqueued(1)
+que.enqueued(2)
+que.enqueued(3)
+que.dequeued()
 
 //console.log(line)
 
@@ -126,11 +126,11 @@ Queue.prototype.dequeued = function(){
     return last
 }
 
-const line = Queue()
-line.enqueued(0)
-line.enqueued(1)
-line.enqueued(2)
-line.dequeued()
+const queue2 = Queue()
+queue2.enqueued(0)
+queue2.enqueued(1)
+queue2.enqueued(2)
+queue2.dequeued()
 
 //console.log(line)
 
@@ -157,11 +157,11 @@ Queue.prototype.size = function(){
     return this.tail + 1 - this.head
 }
 
-const line = new Queue()
-line.enqueued(1)
-line.enqueued(2)
-line.enqueued(3)
- line.dequeued()
+const line2 = new Queue()
+line2.enqueued(1)
+line2.enqueued(2)
+line2.enqueued(3)
+line2.dequeued()
 
 // console.log(line.size())
 // console.log(line)

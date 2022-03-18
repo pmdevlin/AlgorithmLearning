@@ -61,13 +61,13 @@ Stack.methods = {
     }
 }
 
-const plates = Stack()
-plates.push(0)
-plates.push(0)
-plates.push(0)
-plates.push(0)
-plates.push(0)
-plates.pop()
+const st = Stack()
+st.push(0)
+st.push(0)
+st.push(0)
+st.push(0)
+st.push(0)
+st.pop()
 
 //console.log(plates)
 
@@ -90,14 +90,14 @@ const stacks = function(obj){
     return obj
 }
 
-const plates = stacks({})
+const pl = stacks({})
 
-plates.push(0)
-plates.push(1)
-plates.push(2)
-plates.push(3)
-plates.push(4)
-plates.pop()
+pl.push(0)
+pl.push(1)
+pl.push(2)
+pl.push(3)
+pl.push(4)
+pl.pop()
 
 //console.log(plates)
 
@@ -122,11 +122,11 @@ Stack.prototype.pop = function(){
     return top
 }
 
-const plates = Stack()
-plates.push(1)
-plates.push(2)
-plates.push(3)
-plates.pop()
+const slate = Stack()
+slate.push(1)
+slate.push(2)
+slate.push(3)
+slate.pop()
 
 //console.log(plates)
 
@@ -150,10 +150,10 @@ Stack.prototype.pop = function(){
 }
 
 
-const plates = new Stack()
-plates.push(1)
-plates.push(2)
-plates.push(3)
-plates.pop()
+const stack = new Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.pop()
 
 //console.log(plates)
