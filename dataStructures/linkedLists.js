@@ -1,71 +1,66 @@
-// node class 
+//create a node class
 class Node {
-    constructor(data) {
+    constructor(data){
         this.data = data
         this.next = null
     }
 }
 
-
+//create the linked list 
 class LinkedList {
     constructor() {
         this.head = null
         this.tail = null
-        this.length = 0
+        this.length = 0 
     }
-
-    // new Head
-    newHead(data) {
-        const newNode = new Node(data)
-        if(!this.head) {
+// adds to the front of the linked list
+    newHead(value) {
+        const newNode = new Node(value) 
+        if(!this.head){
             this.head = newNode
             this.tail = newNode
-        } else {
+        }else{
             newNode.next = this.head
             this.head = newNode
         }
         this.length++
         return this
     }
-
-    // new tail
+//adds to the back of a linked list
     newTail(data){
-        if (!this.head){ 
-            this.newHead(data)
+        if(!this.head){
+        this.newHead(data)
         }else{
-            const node = new Node(data)
-            this.tail.next = node 
-            this.tail = node 
-            this.length++
+            const newNode = new Node(data)
+            this.tail.next = newNode
+            this.tail = newNode
+            
         }
+        this.length++
         return this
     }
-
-    // printListData
+// prints out all node values in a linked list
     print() {
-        const listData = []
-        let counter = 0
+        const list = []
+        let count = 0
         let current = this.head
-        while(current > this.length){
-            listData.push(current.data)
+        while(count < this.length){
+            list.push(current.data)
             current = current.next
-            counter++
+            count++ 
         }
-        return listData
+        return list
     }
-
-    // readNode(index) // gets back data from a spec node
-    readNode(index) {
-        let currentNode = this.head 
-        let counter = 0 
-
-        while (counter < index) {
-            currentNode = currentNode.next 
-            counter++
+//  returns the data of a specific node
+    read(idx) {
+        let current = this.head 
+        let count = 0 
+        while(count < idx){
+            current = current.next
+            count++
         }
-        console.log(`Node data at index(${index}) is ${currentNode.data}`)
+        return `node data at index ${idx} is ${current.data}`
     }
-
 
     // insert(index, data) // inserts by index number
     insert(index, data){
