@@ -1,33 +1,29 @@
-  
+// Two Sum 
+// Given an array or numbers and a number find the first two numbers that add up to the given number 
+
+//data
+const arr = [ 1,2,3,4,5,5,6,2,3,4,9]
+let num = 11
 
 
-
-const arr = [2,7,6,3,8,1,5,4]
-
-const num = 10
-
-
-
-
-
-
+// two sum function takes in an array and number
 const twoSum = (arr, num) => {
+// use the object to keep track of values already tested
     const obj = {}
-
+// loop over the array
     for(let i = 0; i < arr.length; i++){
-         let current = arr[i]
-         let number = num - current
-         if(!obj[number]){
-             obj[current] = i
-             console.log(obj)
-         }else{
-            console.log(obj)
-            return [number, current]
-            
-         }
-    }
+//find the number you are looking for by subtracting the original number value from the 
+// current number at each index. if the number is not in the object continue. 
+// if it is return the number and the current 
 
-    return -1 
+        let current = arr[i]
+        let number = num - current
+        if(!obj[number]){
+            obj[current] = i 
+        }else{
+            return [number, current]
+        }
+    }
 }
 
 console.log(twoSum(arr, num))
