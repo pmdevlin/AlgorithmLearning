@@ -29,3 +29,23 @@ const twoSum = (arr, num) => {
 console.log(twoSum(arr, num))
 
 
+
+//Two Sum 
+// brute force / two pointer technique 
+const array = [1,3,7,9,2]
+const target = 11
+
+const twoSum2 = (arr, t ) => {
+    for(let i = 0; i < arr.length; i++){
+            let numToFind = t - arr[i]
+        for(let j = i + 1 ; j < arr.length; j++){
+             
+            if(numToFind === arr[j]){
+                return [i, j]
+            }
+        }
+    }
+    return null
+}
+
+console.log(twoSum2(array, target))
