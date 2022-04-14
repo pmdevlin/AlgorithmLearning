@@ -52,27 +52,31 @@ const findArea2 = (heights) => {
 //shifting pointers technique
 
 const arr2 = [4,8,1,2,3,9]
-                      
+const test = [2,3,4,5,18,17,6]
+                               
 const findArea3 = (heights) => {
 
 let a = 0, b = heights.length-1, maxArea = 0; 
 
-    while(a<b){
+    while(a < b){
+        //console.log({a,b})
         const height = Math.min(heights[a], heights[b])  
         const width = b - a 
         const area = height * width 
+        //console.log({height, width, area})
         maxArea = Math.max(maxArea, area) 
-
+        //console.log({maxArea})
+        
         if(heights[a] <= heights[b]){
             a++
         }else{
-            b++
+            b-- // b needs to deincrement down the array opposite the a 
         }
 
     }
     return maxArea
 }
 
-console.log(findArea3(arr2))
+console.log(findArea3(test))
 
 
