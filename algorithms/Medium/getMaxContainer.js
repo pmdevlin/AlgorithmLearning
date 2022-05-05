@@ -1,4 +1,6 @@
 
+
+// Brute Force solution 
 const array = [7,1,2,3,9] 
 
 const findArea = (arr) => {
