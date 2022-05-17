@@ -7,8 +7,8 @@
 //           object selected from (start, end) 
 
 //data: 
-const arr = [ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 ];
-const num = 5
+const arr = [2,3,5,9];
+const num = 3
 //function: 
 
 const divide = (arr, num) => {
@@ -23,6 +23,7 @@ const divide = (arr, num) => {
     }
 // step 4. return the array containing the subArrays 
     return arrayOfArrays
+    
 }
 
 console.log(divide(arr, num))
