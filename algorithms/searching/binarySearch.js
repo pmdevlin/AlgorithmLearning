@@ -4,7 +4,7 @@
 // Output: 4
 // Explanation: 9 exists in arr and its index is 4
 
-const arr = [-1,0,3,5,9,12,4,23,]
+const arr = [-1,0,3,5,9,12,4,23]
 const target = 12
 
 
