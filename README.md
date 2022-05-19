@@ -43,10 +43,11 @@ This is a repository designed to help me learn the processes and techniques for 
 - [All patterns for Stacks](dataStructures/stacksInAllPatterns.js)
 - [ES6 Stack](dataStructures/stacks.js)
   
+
 <br>
 
 # Conclusion 
-This project is ongoing and will be updated accordingly. 
+This project is ongoing and will be updated accordingly. Some of the code is incomplete because this is a repo for learning. The algorithms are constantly changing as I try new things if there is something that you would like to see completed immediately please feel free to reach out to me via my contact info on my profile. 
 
 
 
