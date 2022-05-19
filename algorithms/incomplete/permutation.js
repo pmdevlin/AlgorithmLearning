@@ -7,7 +7,7 @@
 // reverse iterate through 
 
 const input = [5,6,4,7,9,3,2,8,1]
-const arr = [1,2,3]
+//const arr = [1,2,3]
 
 function permutation2 (arr){
     let newArr = []
