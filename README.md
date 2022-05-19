@@ -7,23 +7,46 @@ This is a repository designed to help me learn the processes and techniques for 
 
 ## Directory: 
 
-- Algorithms: 
-    - This file contains the bulk of the content. 
-        - Course: 
-            - algorithms for a class I am taking 
-        - Incomplete: 
-            - algorithms I am working on understanding 
-        - MyAlgos: 
-            - algorithms that I have completed and continue to study 
-        - Searching: 
-            - common searching algorithms 
-        - Sorting: 
-            - Common sorting Algorithms 
-     
-   
-data structures:
-    this folder has the representation algos for the data structures 
+### Algorithms Folder
+  - Course
+    - [Delete on hash](algorithms/Course/deleteOnHash.js)
+    - [Get max container](algorithms/Course/getMaxContainer.js)
+    - [Trapped rain water](algorithms/Course/trappedRainwater.js)
+    - [Two sum](algorithms/Course/twoSum.js)
+  - My Algos
+    - [Array duplicates](algorithms/myAlgos/arrayDuplicates.js)
+    - [Convert camelCase](algorithms/myAlgos/convertCamelcase.js)
+    - [Count Unique Values](algorithms/myAlgos/countUniqueValues.js)
+    - [FizzBuzz](algorithms/myAlgos/fizzBuzz.js)
+    - [Length of Last Word](algorithms/myAlgos/LengthOfLastWord.js)
+    - [Longest String](algorithms/myAlgos/longestString.js)
+    - [Merge and sort two arrays](algorithms/myAlgos/mergeAndSort.js)
+    - [Repeating substring](algorithms/myAlgos/repeatingSubstring.js)
+    - [Reverse a String](algorithms/myAlgos/reverseString.js)
+    - [Roman numeral to integer](algorithms/myAlgos/romanToInt.js)
+    - [Search input ](algorithms/myAlgos/searchInput.js)
+    - [Split an Array](algorithms/myAlgos/splitArray.js)
+  - Searching 
+    - [Binary Search](algorithms/searching/binarySearch.js)
+  - Sorting
+    - [Bubble Sort](algorithms/sorting/bubbleSort.js)
+    - [Merge Sort](algorithms/sorting/mergeSort.js)
+    - [Quick Sort](algorithms/sorting/quicksort.js)
+    - [Selection Sort](algorithms/sorting/selectionSort.js)
+### Data Structures Folder
+    
+- [Binary Search Tree](dataStructures/bsTreesSolution.js) 
+- [Hash Table](dataStructures/hashTable.js)
+- [Linked List](dataStructures/linkedListSolution.js)
+- [All patterns for Queues](dataStructures/queuesInAllPatterns.js)
+- [ES6 Queue](dataStructures/queues.js)
+- [All patterns for Stacks](dataStructures/stacksInAllPatterns.js)
+- [ES6 Stack](dataStructures/stacks.js)
+  
+<br>
 
+# Conclusion 
+This project is ongoing and will be updated accordingly. 
 
 
 
