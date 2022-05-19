@@ -30,18 +30,7 @@ longestSubstring(str)
 
 
 // sliding window technique 
-
-const slidingWindow = (s) => {
-
-    let left = 0 
-    let right = 1
-    let length = s.length-1
-
-    
-    while(length >= right){
-        let seen ={}, 
-    }
-}
+// involves to pointers that move together and keep track of what they on
 
 
 
