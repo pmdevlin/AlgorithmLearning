@@ -8,9 +8,19 @@ This is a repository designed to help me learn the processes and techniques for 
 ## Directory: 
 
 - Algorithms: 
-    In algorithms you will find; 
-    - [courses](C:\Users\pmdev\develop\AlgorithmLearning\algorithms\Course)
-
+    - This file contains the bulk of the content. 
+        - Course: 
+            - algorithms for a class I am taking 
+        - Incomplete: 
+            - algorithms I am working on understanding 
+        - MyAlgos: 
+            - algorithms that I have completed and continue to study 
+        - Searching: 
+            - common searching algorithms 
+        - Sorting: 
+            - Common sorting Algorithms 
+     
+   
 data structures:
     this folder has the representation algos for the data structures 
 
