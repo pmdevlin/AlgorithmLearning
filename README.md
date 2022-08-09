@@ -15,12 +15,6 @@ This is a repository designed to help me learn the processes and techniques for 
   - [Trapped rain water](algorithms/Course/trappedRainwater.js)
   - [Two sum](algorithms/Course/twoSum.js)
 - My Algos
-- - - Arrays
-- - - [Add every two](algorithms/myAlgos/Arrays/AddEverTwo.js)
-- - - [Array duplicates](algorithms/myAlgos/Arrays/arrayDuplicates.js)
-- - - [Count Unique Values](algorithms/myAlgos/Arrays/countUniqueValues.js)
-- - - [Search input ](algorithms/myAlgos/Arrays/searchInput.js)
-- - - [Split an Array](algorithms/myAlgos/splitArray.js)
 
   - [Convert camelCase](algorithms/myAlgos/convertCamelcase.js)
   - [FizzBuzz](algorithms/myAlgos/fizzBuzz.js)
@@ -30,6 +24,12 @@ This is a repository designed to help me learn the processes and techniques for 
   - [Repeating substring](algorithms/myAlgos/repeatingSubstring.js)
   - [Reverse a String](algorithms/myAlgos/reverseString.js)
   - [Roman numeral to integer](algorithms/myAlgos/romanToInt.js)
+  - Arrays folder
+    - [Add every two](algorithms/myAlgos/Arrays/AddEverTwo.js)
+    - [Array duplicates](algorithms/myAlgos/Arrays/arrayDuplicates.js)
+    - [Count Unique Values](algorithms/myAlgos/Arrays/countUniqueValues.js)
+    - [Search input ](algorithms/myAlgos/Arrays/searchInput.js)
+    - [Split an Array](algorithms/myAlgos/splitArray.js)
 
 - Searching
   - [Binary Search](algorithms/searching/binarySearch.js)
