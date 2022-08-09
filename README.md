@@ -14,7 +14,13 @@ This is a repository designed to help me learn the processes and techniques for 
   - [Longest substring](algorithms/Course/longestSubstring.js)
   - [Trapped rain water](algorithms/Course/trappedRainwater.js)
   - [Two sum](algorithms/Course/twoSum.js)
-- My Algos - Arrays - [Add every two](algorithms/myAlgos/Arrays/AddEverTwo.js) - [Array duplicates](algorithms/myAlgos/Arrays/arrayDuplicates.js) - [Count Unique Values](algorithms/myAlgos/Arrays/countUniqueValues.js) - [Search input ](algorithms/myAlgos/Arrays/searchInput.js) - [Split an Array](algorithms/myAlgos/splitArray.js)
+- My Algos
+- - - Arrays
+- - - [Add every two](algorithms/myAlgos/Arrays/AddEverTwo.js)
+- - - [Array duplicates](algorithms/myAlgos/Arrays/arrayDuplicates.js)
+- - - [Count Unique Values](algorithms/myAlgos/Arrays/countUniqueValues.js)
+- - - [Search input ](algorithms/myAlgos/Arrays/searchInput.js)
+- - - [Split an Array](algorithms/myAlgos/splitArray.js)
 
   - [Convert camelCase](algorithms/myAlgos/convertCamelcase.js)
   - [FizzBuzz](algorithms/myAlgos/fizzBuzz.js)
