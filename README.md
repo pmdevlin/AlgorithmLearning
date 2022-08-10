@@ -49,6 +49,11 @@ This is a repository designed to help me learn the processes and techniques for 
 - [All patterns for Stacks](dataStructures/stacksInAllPatterns.js)
 - [ES6 Stack](dataStructures/stacks.js)
 
+### LeetCode Study Plan 75
+
+- [Find Pivot index ](LeetCodeStudyPlan/FindPivotIndex.js)
+- [running sum ](LeetCodeStudyPlan/runningSum.js)
+
 <br>
 
 # Conclusion
