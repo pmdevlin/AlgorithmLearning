@@ -1,34 +1,37 @@
-// Two Sum
-// Given an array or numbers and a number find the first two numbers that add up to the given number
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+// You can return the answer in any order.
 
-//data
-//const arr = [ 1,2,3,4,5,5,6,2,3,4,9]
-//const arr = []
-const arr = [5];
-let num = 13;
+// Example 1:
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-// two sum function takes in an array and number
-const twoSum = (arr, num) => {
-  // use the object to keep track of values already tested
+// Example 2:
+// Input: nums = [3,2,4], target = 6
+// Output: [1,2]
+
+// Example 3:
+// Input: nums = [3,3], target = 6
+// Output: [0,1]
+
+const arr1 = [2, 7, 11, 15];
+const target = 9;
+
+const twoSum = (num, target) => {
   const obj = {};
-  // loop over the array
-  for (let i = 0; i < arr.length; i++) {
-    //find the number you are looking for by subtracting the original number value from the
-    // current number at each index. if the number is not in the object continue.
-    // if it is return the number and the current
-
-    let current = arr[i];
-    let number = num - current;
-    if (!obj[number]) {
-      obj[current] = i;
+  for (let i = 0; i < num.length; i++) {
+    const current = obj[num[i]];
+    if (current >= 0) {
+      return [current, i];
     } else {
-      return [obj[number], i];
+      const numToFind = target - num[i];
+      obj[numToFind] = i;
     }
   }
   return null;
 };
-
-//console.log(twoSum(arr, num))
+console.log(twoSum(arr1, target));
 
 //Two Sum
 // brute force / two pointer technique
@@ -48,44 +51,4 @@ const twoSum2 = (arr, t) => {
   return null;
 };
 
-// console.log(twoSum2(array, target))
-
-//const arr = [1,3,7,9,2]
-const target = 11;
-
-const twoSum3 = (num, target) => {
-  const obj = {};
-  for (let i = 0; i < num.length; i++) {
-    const current = obj[num[i]];
-    if (current >= 0) {
-      return [current, i];
-    } else {
-      const numToFind = target - num[i];
-      obj[numToFind] = i;
-    }
-  }
-  return null;
-};
-//console.log(twoSum3(arr, target))
-
-// two sum with while loops
-
-const twoSumArr = [1, 9, 2, 8, 3, 7, 4, 6, 5];
-const ourTarget = 17;
-
-const twoSum4 = (arr, target) => {
-  const obj = {};
-  for (let i = 0; i < arr.length; i++) {
-    let current = arr[i];
-    let number = target - current;
-    if (!obj[number]) {
-      obj[current] = arr[i];
-      console.log(obj);
-    } else {
-      return [obj[number], arr[i]];
-    }
-  }
-  return null;
-};
-
-console.log(twoSum4(twoSumArr, ourTarget));
+console.log(twoSum2(arr1, target));
