@@ -51,8 +51,8 @@ This is a repository designed to help me learn the processes and techniques for 
 
 ### LeetCode Study Plan 75
 
-- [Find Pivot index ](LeetCodeStudyPlan/FindPivotIndex.js)
-- [running sum ](LeetCodeStudyPlan/runningSum.js)
+- [Find Pivot index ](LeetCodeStudyPlan/LeetCode_75/FindPivotIndex.js)
+- [running sum ](LeetCodeStudyPlan/LeetCode_75/runningSum.js)
 
 <br>
 
