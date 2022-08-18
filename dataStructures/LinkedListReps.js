@@ -35,25 +35,24 @@ class LinkedList {
     this.length++;
     return this;
   }
-
-  print() {
-    const list = [];
-    let count = 0;
+  reverse() {
     let current = this.head;
-    while (count < this.length) {
-      list.push(current.data);
-      current = current.next;
-      count++;
+    let prev = null;
+    let next = null;
+
+    while (current != null) {
+      next = current.next;
+      current.next = prev;
+      prev = current;
+      current = next;
     }
-    return list;
+    this.head = prev;
   }
 }
 
 const list = new LinkedList();
-list.newHead(10);
-list.newHead(11);
-
-list.newTail(100);
-
-console.log(list.print());
+list.newTail(3);
+list.newHead(2);
+list.newHead(1);
+//list.reverse();
 console.log(list);
