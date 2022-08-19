@@ -4,7 +4,8 @@
 
 // Return the head of the merged linked list.
 
-// Input: list1 = [1,2,4], list2 = [1,3,4]
+let list1 = [1, 2, 4],
+  list2 = [1, 3, 4];
 // Output: [1,1,2,3,4,4]
 
 // Input: list1 = [], list2 = []
@@ -14,6 +15,13 @@
 // Output: [0]
 
 // recursive solution for merge two lists
+
+class ListNode {
+  constructor() {
+    // this.val = (val===undefined) ? 0 : val);
+    // this.next = (next===undefined) ? 0 : next);
+  }
+}
 
 const mergeTwoLists = (list1, list2) => {
   if (!list1 || !list2) return list1 || list2;
@@ -25,3 +33,5 @@ const mergeTwoLists = (list1, list2) => {
   list2.next = mergeTwoLists(list1, list2.next);
   return list2;
 };
+
+console.log(mergeTwoLists(list1, list2));
