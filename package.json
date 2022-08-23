@@ -1,0 +1,21 @@
+{
+  "name": "algorithmlearning",
+  "version": "1.0.0",
+  "description": "This is a repository designed to help me learn the processes and techniques for learning and understanding the workings of all sorts of different algorithms. If you are on a journey to get better at solving algorithms please take a look at the work I have done. In the different sections you will find my solutions to some popular algorithms. After I have solved a problem I try to find a better solution by refactor or help from someone else. OK maybe not better but different to learn the different ways to solve problems and the different methods involved. I hope you enjoy !!!!!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmdevlin/myCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmdevlin/myCode/issues"
+  },
+  "homepage": "https://github.com/pmdevlin/myCode#readme"
+}
