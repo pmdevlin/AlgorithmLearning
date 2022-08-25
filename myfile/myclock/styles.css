@@ -1,0 +1,37 @@
+* {
+  border-radius: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  width: 85%;
+  border: 5px solid black;
+  justify-content: space-between;
+}
+
+.hour,
+.seconds,
+.minutes {
+  border: 1px solid red;
+  width: 10rem;
+  height: 8rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+#hourNum1,
+#hourNum2,
+#minNum1,
+#minNum2,
+#secNum1,
+#secNum2 {
+  border: 1px solid black;
+  height: 6rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+}
