@@ -36,6 +36,47 @@ const decsSort = (arr) => {
   return arr;
 };
 
+const numberArrayTest = (arr) => {
+  let num = 0;
+  let numberArray = false;
+
+  while (num <= arr.length) {
+    if (typeof arr[num] === "number") {
+      num++;
+    }
+    if (num === arr.length) {
+      console.log("pure number array");
+      numberArray = true;
+      return numberArray;
+    }
+  }
+
+  return false;
+};
+
+const stringArrayTest = (arr) => {
+  let letter = 0;
+  let stringArray = false;
+
+  // add another if else
+
+  while (letter <= arr.length) {
+    if (typeof arr[letter] === "string") {
+      let current = arr[letter];
+      current.toLowerCase();
+      letter++;
+    }
+    if (letter === arr.length) {
+      stringArray = true;
+      console.log("pure string array");
+      return stringArray;
+    }
+  }
+  return false;
+};
+
+console.log(stringArrayTest(array));
+
 const allSorts = (arr, boolValue) => {
   if (boolValue === true) {
     return acsSort(arr);
@@ -45,5 +86,5 @@ const allSorts = (arr, boolValue) => {
   }
 };
 
-const result = allSorts(array, false);
-console.log(result);
+// const result = allSorts(array, false);
+// console.log(result);
