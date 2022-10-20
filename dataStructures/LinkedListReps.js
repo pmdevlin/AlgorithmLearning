@@ -1,7 +1,7 @@
 class Node {
   constructor(data) {
     this.data = data;
-    this.next = null;
+    this.null = null;
   }
 }
 
@@ -12,7 +12,7 @@ class LinkedList {
     this.length = 0;
   }
 
-  newHead(value) {
+  addHead(value) {
     const newNode = new Node(value);
     if (!this.head) {
       this.head = newNode;
@@ -24,9 +24,10 @@ class LinkedList {
     this.length++;
     return this;
   }
-  newTail(value) {
+
+  addTail(value) {
     if (!this.head) {
-      this.newHead(value);
+      this.addHead(value);
     } else {
       const newNode = new Node(value);
       this.tail.next = newNode;
@@ -35,24 +36,4 @@ class LinkedList {
     this.length++;
     return this;
   }
-  reverse() {
-    let current = this.head;
-    let prev = null;
-    let next = null;
-
-    while (current != null) {
-      next = current.next;
-      current.next = prev;
-      prev = current;
-      current = next;
-    }
-    this.head = prev;
-  }
 }
-
-const list = new LinkedList();
-list.newTail(3);
-list.newHead(2);
-list.newHead(1);
-//list.reverse();
-console.log(list);
