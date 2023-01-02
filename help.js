@@ -20,6 +20,33 @@ const testObj = {
   },
 };
 
+const json = [
+  {
+    name: "hank",
+    rank: "SGT",
+    pay: 3000,
+    patches: [1234, 2342, 2462],
+  },
+  {
+    name: "Jerry",
+    rank: "SSG",
+    pay: 5000,
+    patches: [4321, 7842, 0342],
+  },
+  {
+    name: "Tom",
+    rank: "PV2",
+    pay: 2000,
+    patches: [3945, 1455, 8945],
+  },
+  {
+    name: "Sara",
+    rank: "CPL",
+    pay: 2500,
+    patches: [3214, 7772, 0002],
+  },
+];
+
 const methodObj = {
   sortArr: function (arr) {
     for (let i = 0; i < arr.length; i++) {
